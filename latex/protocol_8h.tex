@@ -1,0 +1,65 @@
+\hypertarget{protocol_8h}{}\section{protocol.\+h File Reference}
+\label{protocol_8h}\index{protocol.\+h@{protocol.\+h}}
+
+
+语音聊天服务器协议定义  
+
+
+{\ttfamily \#include $<$cstdint$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structVoiceChatPacket}{Voice\+Chat\+Packet}}
+\begin{DoxyCompactList}\small\item\em 语音聊天协议数据包结构 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{protocol_8h_a0628f13bcd4685c7a4b4a9f1aad83b56}{Packet\+Type}} \+: uint8\+\_\+t \{ \mbox{\hyperlink{protocol_8h_a0628f13bcd4685c7a4b4a9f1aad83b56a6d3f5998222a9381b95768ee044074ba}{J\+O\+I\+N\+\_\+\+R\+O\+OM}} = 1, 
+\mbox{\hyperlink{protocol_8h_a0628f13bcd4685c7a4b4a9f1aad83b56aa9656ace96f7d96d364be71d1d50ca40}{V\+O\+I\+C\+E\+\_\+\+D\+A\+TA}} = 2, 
+\mbox{\hyperlink{protocol_8h_a0628f13bcd4685c7a4b4a9f1aad83b56ab9e03e7155989de65f74fe4445ab09a7}{L\+E\+A\+V\+E\+\_\+\+R\+O\+OM}} = 3
+ \}
+\begin{DoxyCompactList}\small\item\em 语音聊天协议数据包类型枚举 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+语音聊天服务器协议定义 
+
+\begin{DoxyAuthor}{Author}
+Jiafeng Chen (\href{mailto:jiafengchen0104@gmail.com}{\tt jiafengchen0104@gmail.\+com}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2025-\/11-\/08
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2025 
+\end{DoxyCopyright}
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{protocol_8h_a0628f13bcd4685c7a4b4a9f1aad83b56}\label{protocol_8h_a0628f13bcd4685c7a4b4a9f1aad83b56}} 
+\index{protocol.\+h@{protocol.\+h}!Packet\+Type@{Packet\+Type}}
+\index{Packet\+Type@{Packet\+Type}!protocol.\+h@{protocol.\+h}}
+\subsubsection{\texorpdfstring{Packet\+Type}{PacketType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{protocol_8h_a0628f13bcd4685c7a4b4a9f1aad83b56}{Packet\+Type}} \+: uint8\+\_\+t}
+
+
+
+语音聊天协议数据包类型枚举 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{J\+O\+I\+N\+\_\+\+R\+O\+OM@{J\+O\+I\+N\+\_\+\+R\+O\+OM}!protocol.\+h@{protocol.\+h}}\index{protocol.\+h@{protocol.\+h}!J\+O\+I\+N\+\_\+\+R\+O\+OM@{J\+O\+I\+N\+\_\+\+R\+O\+OM}}}\mbox{\Hypertarget{protocol_8h_a0628f13bcd4685c7a4b4a9f1aad83b56a6d3f5998222a9381b95768ee044074ba}\label{protocol_8h_a0628f13bcd4685c7a4b4a9f1aad83b56a6d3f5998222a9381b95768ee044074ba}} 
+J\+O\+I\+N\+\_\+\+R\+O\+OM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V\+O\+I\+C\+E\+\_\+\+D\+A\+TA@{V\+O\+I\+C\+E\+\_\+\+D\+A\+TA}!protocol.\+h@{protocol.\+h}}\index{protocol.\+h@{protocol.\+h}!V\+O\+I\+C\+E\+\_\+\+D\+A\+TA@{V\+O\+I\+C\+E\+\_\+\+D\+A\+TA}}}\mbox{\Hypertarget{protocol_8h_a0628f13bcd4685c7a4b4a9f1aad83b56aa9656ace96f7d96d364be71d1d50ca40}\label{protocol_8h_a0628f13bcd4685c7a4b4a9f1aad83b56aa9656ace96f7d96d364be71d1d50ca40}} 
+V\+O\+I\+C\+E\+\_\+\+D\+A\+TA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+E\+A\+V\+E\+\_\+\+R\+O\+OM@{L\+E\+A\+V\+E\+\_\+\+R\+O\+OM}!protocol.\+h@{protocol.\+h}}\index{protocol.\+h@{protocol.\+h}!L\+E\+A\+V\+E\+\_\+\+R\+O\+OM@{L\+E\+A\+V\+E\+\_\+\+R\+O\+OM}}}\mbox{\Hypertarget{protocol_8h_a0628f13bcd4685c7a4b4a9f1aad83b56ab9e03e7155989de65f74fe4445ab09a7}\label{protocol_8h_a0628f13bcd4685c7a4b4a9f1aad83b56ab9e03e7155989de65f74fe4445ab09a7}} 
+L\+E\+A\+V\+E\+\_\+\+R\+O\+OM&\\
+\hline
+
+\end{DoxyEnumFields}

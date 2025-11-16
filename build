@@ -1,0 +1,9 @@
+g++ -std=c++17 -pthread main.cc RoomManager.cc Room.cc UserConnection.cc -o chat_server
+# 检查编译是否成功
+if [ -f "./chat_server" ]; then
+    chmod +x chat_server
+    nohup ./chat_server > chat_server.log 2>&1 &
+    echo "Server started."
+else
+    echo "Error: Compilation failed. Check build errors."
+fi

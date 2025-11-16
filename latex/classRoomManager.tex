@@ -1,0 +1,72 @@
+\hypertarget{classRoomManager}{}\section{Room\+Manager Class Reference}
+\label{classRoomManager}\index{Room\+Manager@{Room\+Manager}}
+
+
+{\ttfamily \#include $<$Room\+Manager.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRoomManager_a42d68c9ae5de4b6f6fbc3be6238c47ab}{Room\+Manager}} (const \mbox{\hyperlink{classRoomManager}{Room\+Manager}} \&)=delete
+\item 
+\mbox{\hyperlink{classRoomManager}{Room\+Manager}} \& \mbox{\hyperlink{classRoomManager_a8b1c67feed6d2d9182fe43e5bdae8033}{operator=}} (const \mbox{\hyperlink{classRoomManager}{Room\+Manager}} \&)=delete
+\item 
+void \mbox{\hyperlink{classRoomManager_af100c80473a7e90f81560c252ca35e2f}{add\+To\+Room}} (const std\+::string \&room\+Id, uint32\+\_\+t user\+Id, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classUserConnection}{User\+Connection}} $>$ conn)
+\item 
+void \mbox{\hyperlink{classRoomManager_a5cf75471ede288f73cc565ad4d3e1839}{remove\+From\+Room}} (const std\+::string \&room\+Id, uint32\+\_\+t user\+Id)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classRoom}{Room}} $>$ \mbox{\hyperlink{classRoomManager_abff68c4be2e4eb29e8fa779d758f5255}{get\+Room}} (const std\+::string \&room\+Id)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classRoomManager}{Room\+Manager}} \& \mbox{\hyperlink{classRoomManager_a1ad9930fc8e0c248a3e219ea0aa2e7a1}{get\+Instance}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRoomManager_a42d68c9ae5de4b6f6fbc3be6238c47ab}\label{classRoomManager_a42d68c9ae5de4b6f6fbc3be6238c47ab}} 
+\index{Room\+Manager@{Room\+Manager}!Room\+Manager@{Room\+Manager}}
+\index{Room\+Manager@{Room\+Manager}!Room\+Manager@{Room\+Manager}}
+\subsubsection{\texorpdfstring{Room\+Manager()}{RoomManager()}}
+{\footnotesize\ttfamily Room\+Manager\+::\+Room\+Manager (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRoomManager}{Room\+Manager}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classRoomManager_af100c80473a7e90f81560c252ca35e2f}\label{classRoomManager_af100c80473a7e90f81560c252ca35e2f}} 
+\index{Room\+Manager@{Room\+Manager}!add\+To\+Room@{add\+To\+Room}}
+\index{add\+To\+Room@{add\+To\+Room}!Room\+Manager@{Room\+Manager}}
+\subsubsection{\texorpdfstring{add\+To\+Room()}{addToRoom()}}
+{\footnotesize\ttfamily void Room\+Manager\+::add\+To\+Room (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{room\+Id,  }\item[{uint32\+\_\+t}]{user\+Id,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classUserConnection}{User\+Connection}} $>$}]{conn }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classRoomManager_a1ad9930fc8e0c248a3e219ea0aa2e7a1}\label{classRoomManager_a1ad9930fc8e0c248a3e219ea0aa2e7a1}} 
+\index{Room\+Manager@{Room\+Manager}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!Room\+Manager@{Room\+Manager}}
+\subsubsection{\texorpdfstring{get\+Instance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classRoomManager}{Room\+Manager}}\& Room\+Manager\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classRoomManager_abff68c4be2e4eb29e8fa779d758f5255}\label{classRoomManager_abff68c4be2e4eb29e8fa779d758f5255}} 
+\index{Room\+Manager@{Room\+Manager}!get\+Room@{get\+Room}}
+\index{get\+Room@{get\+Room}!Room\+Manager@{Room\+Manager}}
+\subsubsection{\texorpdfstring{get\+Room()}{getRoom()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classRoom}{Room}} $>$ Room\+Manager\+::get\+Room (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{room\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classRoomManager_a8b1c67feed6d2d9182fe43e5bdae8033}\label{classRoomManager_a8b1c67feed6d2d9182fe43e5bdae8033}} 
+\index{Room\+Manager@{Room\+Manager}!operator=@{operator=}}
+\index{operator=@{operator=}!Room\+Manager@{Room\+Manager}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRoomManager}{Room\+Manager}}\& Room\+Manager\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRoomManager}{Room\+Manager}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classRoomManager_a5cf75471ede288f73cc565ad4d3e1839}\label{classRoomManager_a5cf75471ede288f73cc565ad4d3e1839}} 
+\index{Room\+Manager@{Room\+Manager}!remove\+From\+Room@{remove\+From\+Room}}
+\index{remove\+From\+Room@{remove\+From\+Room}!Room\+Manager@{Room\+Manager}}
+\subsubsection{\texorpdfstring{remove\+From\+Room()}{removeFromRoom()}}
+{\footnotesize\ttfamily void Room\+Manager\+::remove\+From\+Room (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{room\+Id,  }\item[{uint32\+\_\+t}]{user\+Id }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{RoomManager_8h}{Room\+Manager.\+h}}\item 
+\mbox{\hyperlink{RoomManager_8cc}{Room\+Manager.\+cc}}\end{DoxyCompactItemize}

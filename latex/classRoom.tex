@@ -1,0 +1,69 @@
+\hypertarget{classRoom}{}\section{Room Class Reference}
+\label{classRoom}\index{Room@{Room}}
+
+
+{\ttfamily \#include $<$Room.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRoom_a954c553de8641c8dd65e68d672a96887}{Room}} (const std\+::string \&id, const std\+::string \&name)
+\item 
+\mbox{\hyperlink{classRoom_a67d5da09983cc53097807fd43ba5481a}{$\sim$\+Room}} ()
+\item 
+void \mbox{\hyperlink{classRoom_a6a324798e29a74930225b8dbf42d3cd7}{add\+User}} (int user\+Id, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classUserConnection}{User\+Connection}} $>$ conn)
+\item 
+void \mbox{\hyperlink{classRoom_a07d2e24874413a2fb349737c8dfdfb76}{remove\+User}} (int user\+Id)
+\item 
+bool \mbox{\hyperlink{classRoom_aef915c16d8019e03af65f665cf84a55f}{is\+Empty}} () const
+\item 
+void \mbox{\hyperlink{classRoom_a9e187fa06d9b8a26b5210839117fe0a3}{broadcast\+Voice}} (const char $\ast$data, size\+\_\+t len, int exclude\+User\+Id)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRoom_a954c553de8641c8dd65e68d672a96887}\label{classRoom_a954c553de8641c8dd65e68d672a96887}} 
+\index{Room@{Room}!Room@{Room}}
+\index{Room@{Room}!Room@{Room}}
+\subsubsection{\texorpdfstring{Room()}{Room()}}
+{\footnotesize\ttfamily Room\+::\+Room (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{id,  }\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classRoom_a67d5da09983cc53097807fd43ba5481a}\label{classRoom_a67d5da09983cc53097807fd43ba5481a}} 
+\index{Room@{Room}!````~Room@{$\sim$\+Room}}
+\index{````~Room@{$\sim$\+Room}!Room@{Room}}
+\subsubsection{\texorpdfstring{$\sim$\+Room()}{~Room()}}
+{\footnotesize\ttfamily Room\+::$\sim$\+Room (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classRoom_a6a324798e29a74930225b8dbf42d3cd7}\label{classRoom_a6a324798e29a74930225b8dbf42d3cd7}} 
+\index{Room@{Room}!add\+User@{add\+User}}
+\index{add\+User@{add\+User}!Room@{Room}}
+\subsubsection{\texorpdfstring{add\+User()}{addUser()}}
+{\footnotesize\ttfamily void Room\+::add\+User (\begin{DoxyParamCaption}\item[{int}]{user\+Id,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classUserConnection}{User\+Connection}} $>$}]{conn }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classRoom_a9e187fa06d9b8a26b5210839117fe0a3}\label{classRoom_a9e187fa06d9b8a26b5210839117fe0a3}} 
+\index{Room@{Room}!broadcast\+Voice@{broadcast\+Voice}}
+\index{broadcast\+Voice@{broadcast\+Voice}!Room@{Room}}
+\subsubsection{\texorpdfstring{broadcast\+Voice()}{broadcastVoice()}}
+{\footnotesize\ttfamily void Room\+::broadcast\+Voice (\begin{DoxyParamCaption}\item[{const char $\ast$}]{data,  }\item[{size\+\_\+t}]{len,  }\item[{int}]{exclude\+User\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classRoom_aef915c16d8019e03af65f665cf84a55f}\label{classRoom_aef915c16d8019e03af65f665cf84a55f}} 
+\index{Room@{Room}!is\+Empty@{is\+Empty}}
+\index{is\+Empty@{is\+Empty}!Room@{Room}}
+\subsubsection{\texorpdfstring{is\+Empty()}{isEmpty()}}
+{\footnotesize\ttfamily bool Room\+::is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classRoom_a07d2e24874413a2fb349737c8dfdfb76}\label{classRoom_a07d2e24874413a2fb349737c8dfdfb76}} 
+\index{Room@{Room}!remove\+User@{remove\+User}}
+\index{remove\+User@{remove\+User}!Room@{Room}}
+\subsubsection{\texorpdfstring{remove\+User()}{removeUser()}}
+{\footnotesize\ttfamily void Room\+::remove\+User (\begin{DoxyParamCaption}\item[{int}]{user\+Id }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Room_8h}{Room.\+h}}\item 
+\mbox{\hyperlink{Room_8cc}{Room.\+cc}}\end{DoxyCompactItemize}

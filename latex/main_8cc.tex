@@ -1,0 +1,68 @@
+\hypertarget{main_8cc}{}\section{main.\+cc File Reference}
+\label{main_8cc}\index{main.\+cc@{main.\+cc}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$mutex$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$arpa/inet.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}User\+Connection.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}protocol.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Room\+Manager.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8cc_a8446ca9715e01970c4029a1f1ba4d30d}{handle\+Join\+Room}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classUserConnection}{User\+Connection}} $>$ conn, const char $\ast$data, size\+\_\+t len)
+\item 
+void \mbox{\hyperlink{main_8cc_a7646585464088134a713d601e11c10d4}{handle\+Voice\+Data}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classUserConnection}{User\+Connection}} $>$ conn, const char $\ast$data, size\+\_\+t len)
+\item 
+void \mbox{\hyperlink{main_8cc_a314936b221fe47d75cb05176a96216d9}{handle\+Leave\+Room}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classUserConnection}{User\+Connection}} $>$ conn, const char $\ast$data, size\+\_\+t len)
+\item 
+void \mbox{\hyperlink{main_8cc_a759107bb21f71f05a47c908b675655a4}{deal\+Connection\+Data}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classUserConnection}{User\+Connection}} $>$ user\+\_\+conn, const char $\ast$raw\+\_\+data, size\+\_\+t len)
+\item 
+void \mbox{\hyperlink{main_8cc_ac1662abfdf81c8b65bf833dd0a413b1a}{handle\+Client}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classUserConnection}{User\+Connection}} $>$ user\+\_\+conn)
+\item 
+int \mbox{\hyperlink{main_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{main_8cc_a759107bb21f71f05a47c908b675655a4}\label{main_8cc_a759107bb21f71f05a47c908b675655a4}} 
+\index{main.\+cc@{main.\+cc}!deal\+Connection\+Data@{deal\+Connection\+Data}}
+\index{deal\+Connection\+Data@{deal\+Connection\+Data}!main.\+cc@{main.\+cc}}
+\subsubsection{\texorpdfstring{deal\+Connection\+Data()}{dealConnectionData()}}
+{\footnotesize\ttfamily void deal\+Connection\+Data (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classUserConnection}{User\+Connection}} $>$}]{user\+\_\+conn,  }\item[{const char $\ast$}]{raw\+\_\+data,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cc_ac1662abfdf81c8b65bf833dd0a413b1a}\label{main_8cc_ac1662abfdf81c8b65bf833dd0a413b1a}} 
+\index{main.\+cc@{main.\+cc}!handle\+Client@{handle\+Client}}
+\index{handle\+Client@{handle\+Client}!main.\+cc@{main.\+cc}}
+\subsubsection{\texorpdfstring{handle\+Client()}{handleClient()}}
+{\footnotesize\ttfamily void handle\+Client (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classUserConnection}{User\+Connection}} $>$}]{user\+\_\+conn }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cc_a8446ca9715e01970c4029a1f1ba4d30d}\label{main_8cc_a8446ca9715e01970c4029a1f1ba4d30d}} 
+\index{main.\+cc@{main.\+cc}!handle\+Join\+Room@{handle\+Join\+Room}}
+\index{handle\+Join\+Room@{handle\+Join\+Room}!main.\+cc@{main.\+cc}}
+\subsubsection{\texorpdfstring{handle\+Join\+Room()}{handleJoinRoom()}}
+{\footnotesize\ttfamily void handle\+Join\+Room (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classUserConnection}{User\+Connection}} $>$}]{conn,  }\item[{const char $\ast$}]{data,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cc_a314936b221fe47d75cb05176a96216d9}\label{main_8cc_a314936b221fe47d75cb05176a96216d9}} 
+\index{main.\+cc@{main.\+cc}!handle\+Leave\+Room@{handle\+Leave\+Room}}
+\index{handle\+Leave\+Room@{handle\+Leave\+Room}!main.\+cc@{main.\+cc}}
+\subsubsection{\texorpdfstring{handle\+Leave\+Room()}{handleLeaveRoom()}}
+{\footnotesize\ttfamily void handle\+Leave\+Room (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classUserConnection}{User\+Connection}} $>$}]{conn,  }\item[{const char $\ast$}]{data,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cc_a7646585464088134a713d601e11c10d4}\label{main_8cc_a7646585464088134a713d601e11c10d4}} 
+\index{main.\+cc@{main.\+cc}!handle\+Voice\+Data@{handle\+Voice\+Data}}
+\index{handle\+Voice\+Data@{handle\+Voice\+Data}!main.\+cc@{main.\+cc}}
+\subsubsection{\texorpdfstring{handle\+Voice\+Data()}{handleVoiceData()}}
+{\footnotesize\ttfamily void handle\+Voice\+Data (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classUserConnection}{User\+Connection}} $>$}]{conn,  }\item[{const char $\ast$}]{data,  }\item[{size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.\+cc@{main.\+cc}!main@{main}}
+\index{main@{main}!main.\+cc@{main.\+cc}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
