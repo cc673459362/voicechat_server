@@ -7,9 +7,9 @@
 #include <cstring>
 #include <unistd.h>
 #include <arpa/inet.h>
-#include "UserConnection.h"
-#include "protocol.h"
-#include "RoomManager.h"
+#include "user/UserConnection.h"
+#include "protocol/protocol.h"
+#include "room/RoomManager.h"
 
 // 从网络字节序（big-endian）缓冲读取 uint64_t（8 字节）
 static uint64_t read_net_u64(const char* p) {

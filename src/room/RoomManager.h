@@ -5,8 +5,8 @@
 #include <unordered_map>
 #include <memory>
 #include <mutex>
-#include "Room.h"
-#include "UserConnection.h"
+#include "room/Room.h"
+#include "user/UserConnection.h"
 
 class RoomManager {
   public:
